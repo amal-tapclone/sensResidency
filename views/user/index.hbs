@@ -1,0 +1,523 @@
+<!-- start full-page intro -->
+<section class="bg-image-3 with-bg parallax parallax1 section" id="section1">
+  <div class="overlay">
+    <div class="parent">
+      <div class="child">
+        {{! <p class="extra-padding-top"><span class="padding"><i
+              class="fa fa-star"
+            ></i></span><span class="padding"><i
+              class="fa fa-star"
+            ></i></span><span class="padding"><i
+              class="fa fa-star"
+            ></i></span><span class="padding"><i
+              class="fa fa-star"
+            ></i></span><span class="padding"><i
+              class="fa fa-star-half-o"
+            ></i></span></p> }}
+        <h1>Sens
+          <span class="italic">
+            {{! &amp; }}
+          </span>
+          Residency
+        </h1>
+        <p class="large">Experience nature in its purest form, while enjoying
+          attention to detail, indulgent pampering and exceptional cuisine.</p>
+      </div>
+    </div>
+  </div>
+  <a href="#section2" data-title="" id="arrow-down" class="aligncenter">Get
+    started</a>
+</section>
+<!-- end full-page intro -->
+<!-- start header -->
+<header class="clearfix">
+  <div id="logo">
+     <a href="#"></a> 
+     </div>
+  <div class="tagline"><span>Sens Residency
+      {{! &amp; Resort }}
+    </span></div>
+  <div id="nav-button">
+    <span class="nav-bar"></span>
+    <span class="nav-bar"></span>
+    <span class="nav-bar"></span>
+  </div>
+  <nav>
+    <ul id="nav">
+      <li class="active"><a href="#section1">Home</a> </li>
+      <li><a href="#section2">Rooms</a> </li>
+      <li><a href="#section3">Reservation</a> </li>
+      <li><a href="#section4">About</a></li>
+      {{!-- <li><a href="#section5">Deals</a> </li> --}}
+      <li><a href="#section6">Contact</a> </li>
+      <li><a href="/blog"><i class="fa fa-external-link"></i> Blog</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- end header -->
+<!-- start main content -->
+<section class="section white-bg" id="section2">
+  <div id="ancor2"></div>
+  <!-- start ajax -->
+  <div id="ajax-anchor"></div>
+  <div class="ajax-content" id="ajax-content"></div>
+  <div id="loading">
+    <p>loading</p>
+  </div>
+  <!-- end ajax -->
+  <div class="container clearfix">
+    <div class="nautical-1"></div>
+    <div class="col-lg-12 centered header-wrapper">
+      <h2>Our Rooms</h2>
+      <p class="large">Comfort and elegance come together to offer our guests a
+        stay, that is highlighted by disconnecting in a wonderful environment
+        with attention to detail.</p>
+    </div>
+    <div class="col-lg-6 col-md-6 with-bg">
+      <div class="margin-wrapper">
+        {{!-- <a
+          class="simple-ajax-popup" 
+          href="ajax/project1.html"
+          data-title="Project Title Here"
+        > --}}
+          <img alt="" src="/user-assets/uploaded_images/33.jpg" />
+          <div class="covering-image centered">
+            {{!-- <div class="info-box-content">
+              <div class="parent">
+                <div class="child">
+                  <h3 class="header">Double Deluxe</h3>
+                  <p><i>Romantic Getaway for Two</i></p>
+                  <div class="left-side">
+                    <p class="small"><i class="fa fa-bus"></i>
+                      <i class="fa fa-hotel"></i>
+                      <i class="fa fa-cutlery"></i>
+                    </p>
+                  </div>
+                  <div class="right-side">
+                    <p class="small">$349/night</p>
+                  </div>
+                </div>
+              </div>
+            </div> --}}
+          </div>
+        {{!-- </a> --}}
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 with-bg">
+      <div class="margin-wrapper">
+        {{!-- <a
+          class="simple-ajax-popup"
+          href="ajax/project2.html"
+          data-title="Project Title Here"
+        > --}}
+          <img alt="" src="/user-assets/uploaded_images/31.jpg" />
+          <div class="covering-image centered">
+            {{!-- <div class="info-box-content">
+              <div class="parent">
+                <div class="child">
+                  <h3 class="header">Sea View Suites</h3>
+                  <p><i>King-Size Bed</i></p>
+                  <div class="left-side">
+                    <p class="small"><i class="fa fa-coffee"></i>
+                      <i class="fa fa-wifi"></i>
+                      <i class="fa fa-tv"></i>
+                      <i class="fa fa-key"></i>
+                    </p>
+                  </div>
+                  <div class="right-side">
+                    <p class="small">$229/night</p>
+                  </div>
+                </div>
+              </div>
+            </div> --}}
+          </div>
+        {{!-- </a> --}}
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 with-bg">
+      <div class="margin-wrapper">
+        
+          <img alt="" src="/user-assets/uploaded_images/18.jpg" />
+          
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 with-bg">
+      <div class="margin-wrapper">
+        
+          <img alt="" src="/user-assets/uploaded_images/06.jpg" />
+          
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 with-bg">
+      <div class="margin-wrapper center-image">
+        
+          <img alt="" src="/user-assets/uploaded_images/08.jpg" />
+          
+        </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="section3">
+  <div id="ancor3"></div>
+  <div class="container clearfix">
+    <div class="nautical-2"></div>
+    <div class="col-lg-12 centered header-wrapper no-plarge">
+      <h2>Room Reservation</h2>
+    </div>
+  </div>
+  <!-- start reservation form -->
+  <div class="container clearfix" id="sandbox-container">
+    <form
+      {{!-- method="post" --}}
+      {{!-- action="/reservation-form" --}}
+      name="reservation"
+      id="reservation"
+      autocomplete="off"
+      {{!-- class="form" --}}
+    >
+      <fieldset>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <label>Full Name</label>
+          <input type="text" name="Name" id="name" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <label>Email Address</label>
+          <input type="text" name="Email" id="email" />
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+          <label>Phone</label>
+          <input type="text" name="Phone" id="phone" />
+        </div>
+        {{!-- <div class="col-lg-3 col-md-6 col-sm-6">
+          <label>Room</label>
+          <div class="selector">
+            <select id="room">
+              <option value="Double Deluxe" selected>Double Deluxe</option>
+              <option value="Ocean View Suites">Sea View Suites</option>
+            </select>
+          </div>
+        </div> --}}
+        <div class="col-lg-6">
+          <div class="input-daterange input-group" id="datepicker">
+            <label>Arrival Date</label>
+            <input type="text" name="start" id="start" />
+            <span class="input-group-addon">to</span>
+            <label>Departure Date</label>
+            <input type="text" name="end" id="end" />
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <label>Adults</label>
+          <div class="selector">
+            <select id="adults">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="3">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6">
+          <label>Children</label>
+          <div class="selector">
+            <select id="children">
+              <option value="0" selected>0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="2">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-lg-2 centered">
+          <div class="button full-width">
+            <input type="submit" class="submit" id="submit" value="Submit" />
+          </div>
+        </div>
+        <div class="col-lg-12 centered">
+          <div class="message-holder "><span id="message" style=" font-style:italic"></span></div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <!-- end reservation form -->
+</section> 
+{{!-- <section class="section with-bg bg-image-1 parallax parallax2">
+  <div class="overlay"></div>
+  <div class="container clearfix centered">
+    <div class="col-lg-12 centered">
+      <h2>Testimonials</h2>
+    </div>
+    <div class="col-lg-6 aligncenter">
+      <div class="flexslider testimonials">
+        <ul class="slides">
+          <li>
+            <blockquote class="clearfix centered">
+              <p>By far our best vacation yet! It was so relaxing, we never
+                wanted to leave.</p>
+              <p class="small">Steve Jacobs, Canada</p>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote class="clearfix centered">
+              <p>
+                What can we say?! We were just blown away by the attention to
+                detail and the flawless service.</p>
+              <p class="small">Hannah Stroj, Sweden</p>
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section> --}}
+<section class="section white-bg" id="section4">
+  <div id="ancor4"></div>
+  <div class="container clearfix">
+    <div class="nautical-3"></div>
+    <div class="col-lg-12 centered header-wrapper">
+        <h2>Sens Residency 
+          {{!-- <span class="italic">Grand</span> Hotel --}}
+          </h2>
+      {{!-- <p class="large">We have been a family business since 1982, striving
+        relentlessly for unparalled customer satisfaction.</p> --}}
+    </div>
+  </div>
+  <div class="container clearfix">
+    <div id="container">
+      
+      <div class="col-lg-4 col-md-6 col-sm-6 element home">
+        <div class="border-wrapper">
+          <div class="icons food-dome-serving" style="margin-left:1.5rem"></div>
+          <h4>Facilities &amp; Amenities</h4>
+          <p >&#x2022;&nbsp;24 Hours Hot Water</p>
+          <p >&#x2022;&nbsp;Safe Deposit Locker </p>
+          <p >&#x2022;&nbsp;Internet Facility</p>
+          {{!-- <p >&#x2022;&nbsp;Laundry/Dry Cleaning Service</br> <span style="font-size: 0.95rem;">&nbsp;&nbsp;&nbsp;( Out Source )</span>  </p> --}}
+          <p >&#x2022;&nbsp;Travel Assistance  </p>
+          <p >&#x2022;&nbsp;Local Sight Seeing Assistance  </p>
+          <p >&#x2022;&nbsp;Car Rental  </p>
+          <p >&#x2022;&nbsp;Newspapers  </p>
+          <p >&#x2022;&nbsp;Mini Bar  </p>
+          <p >&#x2022;&nbsp;Multi Cuisine Family Restaurant  </p>
+          <p >&#x2022;&nbsp;Boardroom  </p>
+          <p >&#x2022;&nbsp;A/C Banquet Hall  </p>
+          <p >&#x2022;&nbsp;Room Service – 24 Hours  </p>
+          <p >&#x2022;&nbsp;Wake up Call <span style="font-size: 1.2rem;">( On Request )</span>  </p>
+          <p >&#x2022;&nbsp; Doctor on Call  </p>
+          <p >&#x2022;&nbsp; Wheel Chair <span style="font-size: 1.2rem;">( On Request )</span>  </p>
+        </div>
+      </div>
+      
+<div class="col-lg-5 col-md-6  col-sm-6 element home">
+        <div class="margin-wrapper"><img
+            alt=""
+            src="/user-assets/uploaded_images/sensresidency_banner2.jpg"
+          /></div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 element home">
+        <div class="border-wrapper">
+          <div class="icons beach" style="margin-left:1.5rem"></div>
+          <h4>Complimentary Facilities for Room Guests </h4>
+          <p>&#x2022;&nbsp;Breakfast (Choice of Continental or Indian)</p>
+          <p>&#x2022;&nbsp;Pressing Iron and Iron Board</p>
+          <p>&#x2022;&nbsp;Left luggage Room</p>
+          {{!-- <p>&#x2022;&nbsp;Tea /Coffee maker</p> --}}
+          {{!-- <p>&#x2022;&nbsp;Newspaper</p> --}}
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 element home">
+        <div class="border-wrapper">
+          <div class="icons snorkel-mask" style="margin-left:1.5rem"></div>
+          <h4>Free Room Amenities</h4>
+          <p>&#x2022;&nbsp;Shaving Kit</p>
+          <p>&#x2022;&nbsp;Dental Kit</p>
+          <p>&#x2022;&nbsp;Shower Cap</p>
+          <p>&#x2022;&nbsp;Moisturizer</p>
+          <p>&#x2022;&nbsp;Sewing Kit</p>
+          <p>&#x2022;&nbsp;Shampoo</p>
+          <p>&#x2022;&nbsp;Slippers</p>
+          <p>&#x2022;&nbsp;Pen  &amp; Pencil</p>
+          <p>&#x2022;&nbsp;Bottled Drinking Water </br><span style="font-size: 0.98rem;">&nbsp;&nbsp;&nbsp;[ 500ml ] 2nos</span></p>
+        </div>
+      </div>
+      {{!-- <div class="col-lg-3 col-md-6 col-sm-6 element home">
+        <div class="border-wrapper">
+          <div class="icons dumbell"></div>
+          <h4>Fully Equipped Gym</h4>
+          <p>This is consequat luctus at justo auctor metus est donec. Tempus
+            terminal morbi nulla donec.</p>
+        </div>
+      </div> --}}
+      {{!-- <div class="col-lg-3 col-md-6 col-sm-6 element home">
+        <div class="border-wrapper">
+          <div class="icons hat-chef"></div>
+          <h4>2 Michelin Stars Cooking</h4>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+      </div> --}}
+
+      
+      <div class="col-lg-3 col-md-6 col-sm-6 element home">
+        <div class="border-wrapper">
+          <div class="icons safe-2" style="margin-left:1.5rem"></div>
+          <h4>On Chargeable Basis</h4>
+          <p>&#x2022;&nbsp;Laundry/ Dry Cleaning Service</p>
+          <p>&#x2022;&nbsp;Car Rental</p>
+          <p>&#x2022;&nbsp;Local Sight Seeing</p>
+          <p>&#x2022;&nbsp;Doctor on Call</p>
+          <p>&#x2022;&nbsp;Mini Bar</p>
+          <p>&#x2022;&nbsp;Fax/ Photo Copy/ Print Outs</p>
+          <p>&#x2022;&nbsp;Telephone - <span style="font-size: 0.98rem;">Local/ STD/ ISD Calls</span> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  {{!-- <section class="section">
+    <div class="container clearfix">
+      <div class="nautical-4"></div>
+      <div class="col-lg-12 centered logo-wrapper">
+        <h4>Travellers' Choice 2013-2016</h4>
+        <p><i>Awards</i></p>
+        <div class="tripadvisor"></div>
+      </div>
+    </div>
+  </section> --}}
+{{!-- <section class="section with-bg bg-image-2 parallax parallax3">
+  <div class="overlay"></div>
+  <div class="container clearfix centered">
+    <div class="col-lg-12 centered">
+      <p class="small above-h2">Video Tour</p>
+    </div>
+    <div class="col-lg-6 aligncenter centered">
+      <h2>Exceptional Food
+        <span class="italic">from</span>
+        Sirloin to Lobster</h2>
+      <a
+        href="#"
+        data-title="My YouTube Video"
+        data-fancybox-group="group1"
+        class="video-popup round-button"
+      ><i class="fa fa-play"></i></a>
+    </div>
+  </div>
+</section> --}}
+{{!-- <section class="section" id="section5">
+  <div id="ancor5"></div>
+  <div class="container clearfix">
+    <div class="nautical-5"></div>
+    <div class="col-lg-12 centered header-wrapper">
+      <h2>Our Deals</h2>
+      <p class="large">Get your favorite deals and save big on your next dream
+        vacation.</p>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <img alt="" src="/user-assets/images/blog02.jpg" />
+      <figure class="price-table">
+        <div class="heading">
+          <h4>Snorkling for Two</h4>
+        </div>
+        <p class="price"><span>$</span>229</p>
+        <p class="price-details"><span class="line-through">February 12</span>
+          <span class="padding">Fully Booked!</span><br />
+          April 20-21<br />
+          May 4<br />
+          May 15</p>
+        <a href="#" class="button"><i class="fa fa-shopping-cart"></i>
+          Book Now</a>
+      </figure>
+    </div>
+    <div class="col-lg-4 col-md-4"><img
+        alt=""
+        src="/user-assets/images/blog01.jpg"
+      />
+      <figure class="price-table highlighted">
+        <div class="heading">
+          <p class="small">Most Popular</p>
+          <h3>Romantic Getaway</h3>
+        </div>
+        <p class="price"><span>$</span>489</p>
+        <p class="price-details">Free Champagne<br />
+          Roses &amp; Candles<br />
+          Grand Luxury Suite with Beach View<br />
+          Exlusive Boat Trip</p>
+        <a href="#" class="button full-color"><i
+            class="fa fa-shopping-cart"
+          ></i>
+          Book Now</a>
+      </figure>
+    </div>
+    <div class="col-lg-4 col-md-4"><img
+        alt=""
+        src="/user-assets/images/blog03.jpg"
+      />
+      <figure class="price-table">
+        <div class="heading">
+          <h4>Ulitmate Package</h4>
+        </div>
+        <p class="price"><span>$</span>1.149</p>
+        <p class="price-details">Everything You Need<br />
+          Buffet Included<br />
+          All Drinks and Alcoholic Beverages<br />
+          Fishing Trips</p>
+        <a href="#" class="button"><i class="fa fa-shopping-cart"></i>
+          Book Now</a>
+      </figure>
+    </div>
+  </div>
+</section> --}}
+<section class="section white-bg" id="section6">
+  <div id="ancor6"></div>
+  <div class="container clearfix">
+    <div class="nautical-6"></div>
+    <div class="col-lg-12 centered header-wrapper">
+      <h2>Contact Us</h2>
+      <p class="large">If you have any questions, feedback or would like to book
+        a trip, please contact us. We'll get back to you asap!</p>
+    </div>
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <div class="icons map-pin-1"></div>
+      <p class="small">Address</p>
+      {{!--   --}}
+      <p>sens residency, <br />
+        mothirakkani p.o,<br />
+        kuttichira, chalakudy,<br />
+        thrissur, kerala 680724 </p>
+    </div>
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <div class="icons fax-machine"></div>
+      <p class="small">Phone/Fax</p>
+      <p>(845) 123-456 0<br />
+        (845) 123-456 78</p>
+    </div>
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <div class="icons email-2"></div>
+      <p class="small">Email</p>
+      <p><a
+          href="mailto:sensresidency@gmail.com"
+          title=""
+        >sensresidency@gmail.com</a></p>
+    </div>
+    <div class="col-lg-3 col-md-3 centered contact-wrapper">
+      <div class="icons network"></div>
+      <p class="small">Social</p>
+      <p>Connect with Us:</p>
+      <ul class="social-list clearfix">
+        <li> <a href="#"><i class="fa fa-instagram"></i></a> </li>
+        <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
+        <li> <a href="#"><i class="fa fa-twitter"></i></a> </li>
+        {{!-- <li> <a href="#"><i class="fa fa-vimeo"></i></a> </li> --}}
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="map-section">
+  <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.1712525078797!2d76.41184937474493!3d10.328176289794625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ff401860af1d%3A0x72d2f8ca286c38c7!2sSENS%20Residency!5e0!3m2!1sen!2sin!4v1683538973007!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  {{!-- <div id="logo-white"></div> --}}
+  <div class="overlay contact-map-overlay"></div>
+</section>
+<!-- end main content -->
