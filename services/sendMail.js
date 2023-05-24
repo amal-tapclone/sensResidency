@@ -1,15 +1,15 @@
 const nodemailer = require("nodemailer");
-const path = require("path");
-const { google } = require("googleapis");
-const OAuth2 = google.auth.OAuth2;
-const oauth2Client = new OAuth2(
-  process.env.CLIENT_ID,
-  process.env.CLIENT_SECRET,
-  "https://developers.google.com/oauthplayground"
-);
+// const path = require("path");
+// const { google } = require("googleapis");
+// const OAuth2 = google.auth.OAuth2;
+// const oauth2Client = new OAuth2(
+//   process.env.CLIENT_ID,
+//   process.env.CLIENT_SECRET,
+//   "https://developers.google.com/oauthplayground"
+// );
 
-oauth2Client.setCredentials({ refresh_token: process.env.Refresh_Token });
-const accessToken = oauth2Client.getAccessToken();
+// oauth2Client.setCredentials({ refresh_token: process.env.Refresh_Token });
+// const accessToken = oauth2Client.getAccessToken();
 
 function sendMail(
   name,

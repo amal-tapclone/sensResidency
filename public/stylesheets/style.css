@@ -1,8 +1,231 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* welcome header animation */
+.testBorder {
+  border: 2px solid red;
 }
 
-a {
-  color: #00B7FF;
+.containerWelcome {
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 5%;
+  align-items: center;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  /* font-weight: 400; */
+  text-align: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.letter {
+  display: inline-block;
+  text-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.5);
+  animation: rotate-scale 0.4s ease-in-out, pulsate 0.5s ease-in-out;
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s; /* First letter starts immediately */
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.5s; /* Delay the second letter by 2 seconds */
+}
+
+.letter:nth-child(3) {
+  animation-delay: 1s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(4) {
+  animation-delay: 1.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(5) {
+  animation-delay: 2s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(6) {
+  animation-delay: 2.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(7) {
+  animation-delay: 3s; /* Delay the third letter by 4 seconds */
+}
+
+.letter:nth-child(9) {
+  animation-delay: 3.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(10) {
+  animation-delay: 4s; /* Delay the third letter by 4 seconds */
+}
+
+.letter:nth-child(12) {
+  animation-delay: 4.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(13) {
+  animation-delay: 5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(14) {
+  animation-delay: 5.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(15) {
+  animation-delay: 6s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(16) {
+  animation-delay: 6.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(17) {
+  animation-delay: 7s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(18) {
+  animation-delay: 7.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(19) {
+  animation-delay: 8s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(20) {
+  animation-delay: 8.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(21) {
+  animation-delay: 9s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(22) {
+  animation-delay: 9.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(23) {
+  animation-delay: 10s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(24) {
+  animation-delay: 10.5s; /* Delay the third letter by 4 seconds */
+}
+
+.letter:nth-child(26) {
+  animation-delay: 11s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(27) {
+  animation-delay: 11.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(28) {
+  animation-delay: 12s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(29) {
+  animation-delay: 12.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(30) {
+  animation-delay: 13s; /* Delay the third letter by 4 seconds */
+}
+
+.letter:nth-child(32) {
+  animation-delay: 13.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(33) {
+  animation-delay: 14s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(34) {
+  animation-delay: 14.5s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(35) {
+  animation-delay: 15s; /* Delay the third letter by 4 seconds */
+}
+.letter:nth-child(36) {
+  animation-delay: 15.5s; /* Delay the third letter by 4 seconds */
+}
+
+@keyframes rotate-scale {
+  0% {
+    transform: scale(0.8) rotateY(0deg);
+  }
+  50% {
+    transform: scale(1.9) rotateY(180deg);
+  }
+  100% {
+    transform: scale(0.8) rotateY(360deg);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    color: #2e3e4e; /* Start color (red) */
+  }
+  50% {
+    color: #0cc2aa; /* Middle color (green) */
+  }
+  100% {
+    color: #2e3e4e; /* End color (red) */
+  }
+}
+
+/* Room images */
+.room-images {
+  margin-top: 1rem;
+  margin-left: 5%;
+}
+
+.img-wrapper {
+  width: 95%;
+}
+.room-images h2 {
+  font-weight: 400;
+  font-size: 1.33rem;
+  padding: 0;
+}
+
+.image-container {
+  margin-top: 0.6rem;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 0.9rem;
+}
+
+.image-container .edit-icon {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3 8px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
+.image-container .delete-icon {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3 8px;
+  /* border-radius: 50%; */
+  cursor: pointer;
+}
+
+.image-container:hover .edit-icon {
+  display: block;
+}
+.image-container:hover .delete-icon {
+  display: block;
+}
+
+.image-container img {
+  /* height: 9rem; */
+  width: 100%;
+  object-fit: cover;
+  /* padding: 0 1rem; */
+}
+
+.main-wrapper {
+  margin-left: 8%;
+  width: 70%;
+}
+
+form .preview-sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* add images */
+.addImglabel {
+  font-size: 1rem;
+  margin-left: 5%;
 }

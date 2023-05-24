@@ -74,88 +74,47 @@
         stay, that is highlighted by disconnecting in a wonderful environment
         with attention to detail.</p>
     </div>
+    
+    {{#each images}}
     <div class="col-lg-6 col-md-6 with-bg">
       <div class="margin-wrapper">
-        {{!-- <a
-          class="simple-ajax-popup" 
-          href="ajax/project1.html"
-          data-title="Project Title Here"
-        > --}}
-          <img alt="" src="/user-assets/uploaded_images/33.JPG" />
+        {{#if occupied}}
+          <img alt="" src="/user-assets/uploaded_images/{{fileName}}.webp" />
+          {{else}} 
+          <img alt="" src="/user-assets/uploaded_images/no-image.webp" />
+        {{/if}}
           <div class="covering-image centered">
-            {{!-- <div class="info-box-content">
-              <div class="parent">
-                <div class="child">
-                  <h3 class="header">Double Deluxe</h3>
-                  <p><i>Romantic Getaway for Two</i></p>
-                  <div class="left-side">
-                    <p class="small"><i class="fa fa-bus"></i>
-                      <i class="fa fa-hotel"></i>
-                      <i class="fa fa-cutlery"></i>
-                    </p>
-                  </div>
-                  <div class="right-side">
-                    <p class="small">$349/night</p>
-                  </div>
-                </div>
-              </div>
-            </div> --}}
           </div>
-        {{!-- </a> --}}
         </div>
     </div>
-    <div class="col-lg-6 col-md-6 with-bg">
+    {{/each }}
+
+    {{!-- <div class="col-lg-6 col-md-6 with-bg">
       <div class="margin-wrapper">
-        {{!-- <a
-          class="simple-ajax-popup"
-          href="ajax/project2.html"
-          data-title="Project Title Here"
-        > --}}
           <img alt="" src="/user-assets/uploaded_images/31.jpg" />
           <div class="covering-image centered">
-            {{!-- <div class="info-box-content">
-              <div class="parent">
-                <div class="child">
-                  <h3 class="header">Sea View Suites</h3>
-                  <p><i>King-Size Bed</i></p>
-                  <div class="left-side">
-                    <p class="small"><i class="fa fa-coffee"></i>
-                      <i class="fa fa-wifi"></i>
-                      <i class="fa fa-tv"></i>
-                      <i class="fa fa-key"></i>
-                    </p>
-                  </div>
-                  <div class="right-side">
-                    <p class="small">$229/night</p>
-                  </div>
-                </div>
-              </div>
-            </div> --}}
           </div>
-        {{!-- </a> --}}
         </div>
     </div>
+
     <div class="col-lg-6 col-md-6 with-bg">
       <div class="margin-wrapper">
-        
           <img alt="" src="/user-assets/uploaded_images/18.JPG" />
-          
         </div>
     </div>
+
     <div class="col-lg-6 col-md-6 with-bg">
       <div class="margin-wrapper">
-        
           <img alt="" src="/user-assets/uploaded_images/06.jpg" />
-          
         </div>
     </div>
-    <div class="col-lg-12 col-md-12 with-bg">
-      <div class="margin-wrapper center-image">
-        
+
+    <div class="col-lg-6 col-md-6 with-bg">
+      <div class="margin-wrapper">
           <img alt="" src="/user-assets/uploaded_images/08.JPG" />
-          
         </div>
-    </div>
+    </div> --}}
+    
   </div>
 </section>
 <section class="section" id="section3">
@@ -312,7 +271,7 @@
 <div class="col-lg-5 col-md-6  col-sm-6 element home">
         <div class="margin-wrapper"><img
             alt=""
-            src="/user-assets/uploaded_images/sensresidency_banner2.jpg"
+            src="/user-assets/uploaded_images/sensresidency_banner2.webp"
           /></div>
       </div>
       

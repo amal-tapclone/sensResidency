@@ -1,10 +1,13 @@
 var express = require("express");
 const { doReservation } = require("../controllers/userController");
+const Images = require("../models/ImagesModel");
 var router = express.Router();
 
 /* GET home page. */
-router.get("/", function (req, res, next) {
-  res.render("user/index", { title: "Sens Residency" });
+router.get("/", async function (req, res, next) {
+  const imgData = await Images.findOne({}).lean();
+  const images = imgData?.images;
+  res.render("user/index", { title: "Sens Residency", images });
 });
 
 router.post("/reservation-form", doReservation);
