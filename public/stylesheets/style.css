@@ -3,6 +3,10 @@
   border: 2px solid red;
 }
 
+.request- p {
+  margin: 11px 0 6px 2px;
+}
+
 .containerWelcome {
   display: flex;
   /* justify-content: center; */
@@ -273,4 +277,14 @@ form .preview-sec {
     opacity: 1;
     transform: translateX(-50%);
   }
+}
+
+/* gallery container */
+.containerW {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 8%;
 }
