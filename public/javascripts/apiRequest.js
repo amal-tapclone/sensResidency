@@ -1,3 +1,51 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var mySwiper = new Swiper(".swiper-container", {
+    loop: true,
+    spaceBetween: 50,
+    speed: 1000,
+    effect: "cards",
+    // cards cube flip
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    on: {
+      init: function () {
+        // Trigger animation on the initial slide
+        var initialSlide = this.slides[this.activeIndex];
+        animateSlideContent(initialSlide);
+
+        // // Trigger animation on the next slide
+        // var nextSlideIndex = this.activeIndex === this.slides.length - 1 ? 0 : this.activeIndex + 1;
+        // var nextSlide = this.slides[nextSlideIndex];
+        // animateSlideContent(nextSlide);
+      },
+      slideChange: function () {
+        // Reset animation on the previous slide
+        var previousSlide = this.slides[this.previousIndex];
+        resetSlideContent(previousSlide);
+        // Trigger animation on the active slide
+        var activeSlide = this.slides[this.activeIndex];
+        animateSlideContent(activeSlide);
+      },
+    },
+  });
+
+  function animateSlideContent(slide) {
+    var slideContent = slide.querySelector(".slide-content");
+    slideContent.classList.add("slide-content-animate");
+  }
+
+  function resetSlideContent(slide) {
+    var slideContent = slide.querySelector(".slide-content");
+    slideContent.classList.remove("slide-content-animate");
+  }
+});
+
 const resultDiv = document.querySelector("#message");
 
 document.addEventListener("DOMContentLoaded", function () {

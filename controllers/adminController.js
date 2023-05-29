@@ -35,7 +35,6 @@ module.exports = {
     const imageId = req.params.id;
     if (!inputfile) {
       res.send("please choose a image");
-      return;
     } else if (!inputfile.mimetype.startsWith("image/")) {
       throw new Error("Invalid single file type");
     }
@@ -43,9 +42,9 @@ module.exports = {
     convertSingleImgToWebP((width = 653), (height = 359), inputfile).then(
       (results) => {
         console.log(results);
-        saveSingleImageToDb(inputfile, imageId).then((results) => {
-          res.redirect("/admin");
-        });
+        // saveSingleImageToDb(inputfile, imageId).then((results) => {
+        //   res.redirect("/admin");
+        // });
       }
     );
   },

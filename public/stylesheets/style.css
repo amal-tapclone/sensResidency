@@ -229,3 +229,48 @@ form .preview-sec {
   font-size: 1rem;
   margin-left: 5%;
 }
+
+/* swiper slider.... */
+
+.swiper-container {
+  height: 100%;
+}
+
+.swiper-slide img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.slide-content {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-100%);
+  /* text-align: center; */
+  /* color: white; */
+  /* opacity: 0; */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.slide-content-animate {
+  animation: slideContentFade 1s ease-in-out forwards;
+}
+
+@keyframes slideContentFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
