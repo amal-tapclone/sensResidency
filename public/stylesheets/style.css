@@ -4,7 +4,7 @@
 }
 
 .request- p {
-  margin: 11px 0 6px 2px;
+  margin: 11px 0 11px 2px;
 }
 
 .containerWelcome {
@@ -282,9 +282,83 @@ form .preview-sec {
 /* gallery container */
 .containerW {
   width: 100%;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  padding: 50px 8%;
+  /* padding: 50px 8%; */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.gallery a {
+  display: inline-block;
+  position: relative;
+  /* Add other styling properties as needed */
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery a:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1204px) {
+  .gallery {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+@media screen and (max-width: 767px) {
+  .gallery {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}
+
+.gallery img {
+  width: 100%;
+}
+
+/* tourist spots */
+.gallery-wrap {
+  padding: 0 1rem 2rem 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  transition: transform 0.3s ease-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  /* padding: 5px; */
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.gallery-item-text h3 {
+  margin: 0;
+  color: rgb(222, 217, 217);
+}
+
+.gallery-item:hover .gallery-item-text {
+  transform: translateY(100%);
 }
