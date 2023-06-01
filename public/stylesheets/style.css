@@ -274,9 +274,9 @@ form .preview-sec {
   top: 30%;
   left: 50%;
   transform: translateX(-100%);
-  /* text-align: center; */
-  /* color: white; */
-  /* opacity: 0; */
+    /* text-align: center; */
+    /* color: white; */
+    /* opacity: 0; */
 }
 
 .swiper-button-next,
