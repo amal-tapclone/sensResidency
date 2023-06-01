@@ -155,6 +155,8 @@
   }
 }
 
+
+
 /* Room images */
 .room-images {
   margin-top: 1rem;
@@ -238,6 +240,24 @@ form .preview-sec {
 
 .swiper-container {
   height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 422px) {
+  .slide-title {
+    font-size: 3.5rem;
+  }
+  .slide-description {
+    font-size: 2.2rem;
+  }
+}
+
+.swiper-slide #day-pic {
+  object-position: center 65%;
+}
+
+.swiper-slide #night-pic {
+  object-position: center -25px;
 }
 
 .swiper-slide img {

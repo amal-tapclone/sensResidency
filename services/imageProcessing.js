@@ -60,7 +60,7 @@ const convertSingleImgToWebP = (width, height, file) => {
   );
 
   const compressionOptions = {
-    quality: 80, // Adjust  compression quality (0 - 100)
+    quality: 100, // Adjust  compression quality (0 - 100)
   };
 
   const filePath = file.path; // Path uploaded image file
