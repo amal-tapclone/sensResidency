@@ -1,15 +1,5 @@
 const nodemailer = require("nodemailer");
-// const path = require("path");
-// const { google } = require("googleapis");
-// const OAuth2 = google.auth.OAuth2;
-// const oauth2Client = new OAuth2(
-//   process.env.CLIENT_ID,
-//   process.env.CLIENT_SECRET,
-//   "https://developers.google.com/oauthplayground"
-// );
-
-// oauth2Client.setCredentials({ refresh_token: process.env.Refresh_Token });
-// const accessToken = oauth2Client.getAccessToken();
+const path = require("path");
 
 function sendMail(
   name,
@@ -34,16 +24,13 @@ function sendMail(
         </ul>`;
 
     const smtpTrans = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 465,
-      secure: true,
+      service: "gmail",
+      host: "smpt.gmail.com",
+      port: "587",
+      secure: false,
       auth: {
-        type: "OAuth2",
-        user: process.env.GMAIL_USER,
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.REFRESH_TOKEN,
-        accessToken: accessToken,
+        user: process.env.serviceEmail,
+        pass: process.env.serviceEmailPW,
       },
     });
 
@@ -56,14 +43,14 @@ function sendMail(
     );
 
     const mailOpts = {
-      from: process.env.GMAIL_USER,
-      to: process.env.RECIPIENT,
+      from: process.env.serviceEmail,
+      to: "sensresidency@gmail.com",
       subject: "New message from Reservation-form",
       html: output,
       attachments: [
         {
           filename: "email.jpg",
-          // path: __dirname + "/public/images/mail.webp",
+          path: __dirname + "/public/images/mail.webp",
           path: imagePath,
           cid: "email", //same cid value as in the html img src
         },
