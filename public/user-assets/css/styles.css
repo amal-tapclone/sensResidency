@@ -797,8 +797,8 @@ header {
 
 .section {
   position: relative;
-  /* padding: 84px 0; */
-  padding: 45px 0px 84px 0px;
+  padding: 84px 0;
+  /* padding: 45px 0px 84px 0px; */
   display: block;
 }
 #ancor2,
